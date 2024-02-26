@@ -74,6 +74,7 @@ def foldercheck(source, replica, logfilepath):
             copied += 1
         
     for file in files_replica:
+        # file from the replica does not exist in the source
         if file not in files_source:
             os.remove(replica+'/'+file)
             log(f'Deleted {file}',logfilepath)
