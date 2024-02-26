@@ -1,7 +1,7 @@
 # onewayfoldersync
-This is a program that synchronizes two folders.
-  *   Synchronization is carried out periodically and changes(file update, copying, removal operations) are displayed in the console and written to a log file.
-  *   Folder paths, synchronization interval and log file path can be provided using command line arguments, with default values.   
+This program is meant to synchronize two folders (source and replica).
+  *   Synchronization is carried out periodically and changes (file update/copying/removal operations) are displayed in the console and written to a log file.
+  *   Folder paths, synchronization interval and log file path are provided using command line arguments, with default values.   
 
 ## Requirements
 
@@ -22,7 +22,7 @@ python main.py [--source SOURCE] [--replica REPLICA] [--logfilepath LOG_FILE_PAT
 
 ## Example
 
-To synchronize a folder named "folder01" to "folder02" with a time interval of 45 seconds and log the synchronization process to "logfile00.txt", run the following command:
+Synchronization between a folder named "folder01" to "folder02" with a time interval of 45 seconds and log the synchronization process to "logfile00.txt":
 
 ```
 python foldersync.py --source folder01 --replica folder02 --logfilepath logfile00.txt --timer 45
